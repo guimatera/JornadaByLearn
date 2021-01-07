@@ -3,7 +3,7 @@ def validacao_idade(idade):
         print(f'\nVocê possui idade suficente para dirigir. Vamos prosseguir, {nome}.\n')
         return True
     else:
-        print(f' {nome}, infelizmente você não possui idade suficiente para dirigir.')
+        print(f' {nome}, infelizmente você não possui idade suficiente para dirigir.\n')
         return False
     
 def escolha_carteira():
@@ -22,7 +22,6 @@ def calculo_preco(escolha):
     else:
         return valor_carro + valor_moto
     
-
 def interessado():
     print('Está interessado(a)?')
     print('1-Sim\n2-Não')
@@ -35,7 +34,6 @@ def interessado():
 def desconto(valor):
     return valor - (valor*0.1)
 
-    
 nome = input('Digite seu nome, por favor: ')
 idade = int(input('Digite sua idade, por favor: '))
 
